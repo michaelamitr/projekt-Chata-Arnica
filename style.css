@@ -187,7 +187,7 @@ span {
 
 body,
 a {
-  color: black;
+  color: var(--text);
   font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -210,8 +210,11 @@ header {
 
 .subheading {
   background-color: var(--background-primary);
-  max-width: 800px;
   text-align: center;
+}
+
+.subheading__content {
+  max-width: 800px;
 }
 
 .pricelist {
@@ -280,4 +283,53 @@ footer {
   }
 
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+
+  .pricelist__content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .offer {
+    width: 220px;
+  }
+
+  .review__photo {
+    background-image: url('./images/reviewer.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+  }
+
+  .review__text {
+    width: 250px;
+    background-color: var(--background-secondary);
+    position: relative;
+    left: 60px;
+  }
+
+  .review__content {
+    border: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: start;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .pricelist__content {
+    gap: 6rem;
+  }
+
+  .footer {
+    gap: 6rem;
+  }
 }

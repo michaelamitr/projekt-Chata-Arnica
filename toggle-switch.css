@@ -1,13 +1,21 @@
+:root[data-theme='dark'] {
+  --background-primary: #132221;
+  --background-secondary: #476462;
+  --text: #e1e1e1;
+}
+
 /*Simple css to style toggle switch*/
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
 }
+
 span {
   margin-right: 0.5rem;
   font-size: 1rem;
   font-style: italic;
 }
+
 .theme-switch {
   display: inline-block;
   height: 28px;
@@ -41,11 +49,11 @@ span {
   width: 20px;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #62b283;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(16px);
 }
 
